@@ -15,7 +15,7 @@ pipeline {
 
             post {
                 always {
-                    junit 'target/surefire-reports/Test-*.xml'
+                    junit '/Users/parmjit/Documents/QA-Tests-July2021/BE-test/jenkinsTutorial/java-rest-api-calculator-1/target/surefire-reports/Test-*.xml'
                 }
             }
         }

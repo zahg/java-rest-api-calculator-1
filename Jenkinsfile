@@ -15,7 +15,7 @@ pipeline {
 
             post {
                 always {
-                    junit 'target/surefire-reports/TEST-com.coralogix.calculator.CalculatorApplicationTests.xml'
+                    junit 'target/surefire-reports/TEST-*.xml'
                 }
             }
         }

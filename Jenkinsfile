@@ -19,7 +19,8 @@ pipeline {
                 }
             }
         }
-       stage('Publish') {
+
+      stage('Publish') {
             steps {
                 sh './mvnw package'
             }
@@ -27,6 +28,8 @@ pipeline {
                 success {
                     archiveArtifacts 'target/*.jar'
                 }
-            }
-       }
+      }
+
+
     }
+}

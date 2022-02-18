@@ -19,5 +19,9 @@ pipeline {
                 }
             }
         }
+       stage('Publish') {
+            steps {
+                sh './mvnw package'
+            }
     }
 }
